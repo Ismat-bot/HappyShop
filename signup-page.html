@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup - HappyShop</title>
+  </head>
+  <body>
+    <!-- Part of Signup Section -->
+<section id="signup-page">
+  <div class="form-container">
+    <h2>Create an Account</h2>
+    <form id="signup-form" action="#" method="post">
+      <form action="auth.php" method="post">
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required />
+        </div>
+        <button type="submit" name="signup" class="btn">Signup</button>
+        <p>Already have an account? <a href="index.html">Login here</a></p>
+      </form>
+    </form>
+  </div>
+</section>
+
+
+    <!-- External Styles -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      #signup-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .form-container {
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .btn {
+        width: 100%;
+        background-color: #28a745;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #218838;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      p a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      p a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </body>
+</html>
